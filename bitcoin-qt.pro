@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = liarcoin-qt
-macx:TARGET = "Litecoin-Qt"
+macx:TARGET = "Liarcoin-Qt"
 VERSION = 0.8.7.2
 INCLUDEPATH += src src/json src/qt
 QT += core gui network

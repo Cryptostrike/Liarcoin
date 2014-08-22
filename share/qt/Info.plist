@@ -15,16 +15,16 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Litecoin-Qt</string>
+	<string>Liarcoin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.liarcoin.Litecoin-Qt</string>
+	<string>org.liarcoin.Liarcoin-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>org.liarcoin.LitecoinPayment</string>
+            <string>org.liarcoin.LiarcoinPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
               <string>liarcoin</string>
