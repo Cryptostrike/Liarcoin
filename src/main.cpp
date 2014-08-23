@@ -35,7 +35,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0xec9275767d493a1f7a095ef33b57e99bf392e736e1e1f96bc7195a8d51f2571e");
+uint256 hashGenesisBlock("0x2169d5229186604680ec84c32441e83717f67f81ad2eba0c28ac567ff4210f97");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Liarcoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2746,7 +2746,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdc;
-        hashGenesisBlock = uint256("0xf5ae71e26c74beacc88382716aced69cddf3dffff24f384e1808905e0188f68f");
+        hashGenesisBlock = uint256("0x2169d5229186604680ec84c32441e83717f67f81ad2eba0c28ac567ff4210f97");
     }
 
     //
@@ -2793,12 +2793,12 @@ bool InitBlockIndex() {
         block.nVersion = 1;
         block.nTime    = 1408754665;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 0;
+        block.nNonce   = 2769792;
 
         if (fTestNet)
         {
             block.nTime    = 1408754665;
-            block.nNonce   = 0;
+            block.nNonce   = 2769792;
         }
 
         //// debug print
@@ -2809,7 +2809,7 @@ bool InitBlockIndex() {
         assert(block.hashMerkleRoot == uint256("0xd06673b7c78f9701b339efc5c90d6e4e3e812bbced6431d6c41291caa36d4c8b"));
         
         // If genesis block hash does not match, then generate new genesis hash.
-        if (true && block.GetHash() != hashGenesisBlock)
+        if (false && block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
